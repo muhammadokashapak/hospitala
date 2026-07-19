@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.sqlite3
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
