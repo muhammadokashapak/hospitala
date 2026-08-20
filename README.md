@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # 🏥 Hospital & Clinical ERP Management System
 
@@ -7,15 +7,16 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript" /> <img src="https://img.shields.io/badge/React-=for-the-badge&logo=react&logoColor=white" alt="React" /> <img src="https://img.shields.io/badge/NodeJS-=for-the-badge&logo=nodedotjs&logoColor=white" alt="NodeJS" /> <img src="https://img.shields.io/badge/MongoDB-=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /> <img src="https://img.shields.io/badge/Material_UI-=for-the-badge&logo=mui&logoColor=white" alt="Material_UI" /> 
+  <img src="https://img.shields.io/badge/JavaScript-FullStack-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript-FullStack" /> <img src="https://img.shields.io/badge/React-18-20232A?style=for-the-badge&logo=react&logoColor=white" alt="React-18" /> <img src="https://img.shields.io/badge/NodeJS-Express-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="NodeJS-Express" /> <img src="https://img.shields.io/badge/Database-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="Database-MongoDB" /> <img src="https://img.shields.io/badge/UI-Material_UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="UI-Material_UI" />
 </p>
 
 <p align="center">
   <a href="#-overview">Overview</a> •
-  <a href="#-key-features">Key Features</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-getting-started">Getting Started</a> •
-  <a href="#-author">Author</a>
+  <a href="#-system-architecture">Architecture</a> •
+  <a href="#-key-features--capabilities">Key Features</a> •
+  <a href="#-tech-stack--tools">Tech Stack</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-author--license">Author</a>
 </p>
 
 </div>
@@ -24,16 +25,29 @@
 
 ## 📌 Overview
 
-A hospital management ERP application designed to streamline healthcare operations, patient triage, OPD/IPD management, pharmacy inventory, and billing workflows.
+A hospital information ERP application designed to manage hospital workflows, outpatient (OPD) and inpatient (IPD) admissions, bed management, pharmacy inventory, and billing operations.
 
 ---
 
-## ✨ Key Features
+## 🏗️ System Architecture
 
-- 🏥 **Patient Admission & OPD/IPD**: Track patient intake, bed allocation, and discharge summaries.
-- 💊 **Pharmacy & Inventory Module**: Real-time medicine stock tracking and expiration alerts.
-- 💳 **Automated Billing & Invoicing**: Itemized medical invoices, insurance claims, and receipts.
-- 👨‍⚕️ **Doctor Shift Scheduling**: On-call staff rotation and appointment calendars.
+```mermaid
+graph TD
+    A[Hospital Reception / OPD / IPD] --> B[Express.js REST Gateway]
+    B --> C[Patient Admission & Bed Allocation]
+    B --> D[Pharmacy Inventory Tracker]
+    B --> E[Invoicing & Billing Engine]
+    C & D & E --> F[(MongoDB Cluster)]
+```
+
+---
+
+## ✨ Key Features & Capabilities
+
+- 🏥 **Patient Triage & Admission**: Bed allocation, OPD ticketing, and discharge summaries.
+- 💊 **Pharmacy & Stock Control**: Real-time drug stock monitoring with automatic expiry alerts.
+- 💳 **Itemized Medical Billing**: Invoice generation, laboratory charge tracking, and receipt printing.
+- 👨‍⚕️ **Staff Scheduling**: Doctor on-call rotations and duty rosters.
 
 ---
 
@@ -48,37 +62,39 @@ A hospital management ERP application designed to streamline healthcare operatio
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-### Prerequisites
-Make sure you have the required runtime installed on your machine:
-- **Git**
-- **Python 3.9+ / Node.js 18+** (depending on the project)
+### 📋 Prerequisites
+Ensure you have the required runtime environment installed:
+* **Git** version 2.30+
+* **Python 3.9+** / **Node.js 18+** / **Android Studio** (depending on project stack)
 
-### Quick Start
+### 📥 Installation & Setup
 
-``bash
+```bash
 # 1. Clone the repository
 git clone https://github.com/muhammadokashapak/hospitala.git
 
-# 2. Navigate into the project directory
+# 2. Enter the directory
 cd hospitala
-``
+```
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Author & License
 
 <div align="center">
 
 **Muhammad Okasha**
 <br/>
-<a href="https://github.com/muhammadokashapak"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="https://linkedin.com/in/muhammad-okasha"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:muhammadokashapak@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+*Deep Learning & Mobile Software Engineer*
+<br/><br/>
+<a href="https://github.com/muhammadokashapak"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github&logoColor=white" /></a>
+<a href="https://linkedin.com/in/muhammad-okasha"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:muhammadokashapak@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
 
 <br/><br/>
 
-*⭐ Star this repository if you find it helpful! • © 2026 [Muhammad Okasha](https://github.com/muhammadokashapak)*
+*⭐️ If you find this project helpful, please consider giving it a star! • © 2026 [Muhammad Okasha](https://github.com/muhammadokashapak)*
 
 </div>
